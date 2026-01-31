@@ -1,204 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V K MEMORIAL PUBLIC SCHOOL </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous-basic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js"></script>
 </head>
+
 <body>
-<nav class="branding-header">
-<div class="header-center">
-    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 20px; color: inherit;">
-        <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo">
-        <div class="school-titles">
-            <h1>V.K MEMORIAL PUBLIC SCHOOL</h1>
-            <div class="subtitle-wrapper">
-                <span class="line"></span>
-                <h2 class="branch-name">HARBANSH NAGAR GHAZIABAD</h2>
-                <span class="line"></span>
-            </div>
-            <p class="initiative">An initiative of RASTRIYA SHIKSHA PRASHAR AND MANAV UTTHAN SAMITI Society</p>
-        </div>
-    </a>
-</div>
-</nav>
 
-<div class="academic-nav">
-    <div class="nav-container">
-        <ul>
-            <li class="dropdown">
-                <a href="#">ABOUT US</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="school-history.html">SCHOOL HISTORY</a></li>
-                    <li><a href="#">OUR MISSION</a></li>
-                    <li><a href="principal-message.html">PRINCIPALS MESSAGE</a></li>
-                    <li><a href="#">INFRASTRUCTURE</a></li>
-                    <li><a href="#">OUR PRINCIPAL'S</a></li>
-                    <li><a href="#">OUR MANAGERS</a></li>
+    <!-- Nav Ove rlay -->
+    <div class="nav-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Floating CTAs -->
+    <div class="floating-ctas">
+        <a href="#contact" class="cta-btn enquire">Enquire Now</a>
+        <a href="#contact" class="cta-btn apply">Apply Now</a>
+    </div>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container header-content">
+                <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                    <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo">
+                    <div class="school-titles">
+                        <h1 style="margin:0; font-size:22px;">V.K MEMORIAL PUBLIC SCHOOL</h1>
+                        <p class="initiative" style="margin:0; font-size:11px; color:#666;">An initiative of RASTRIYA
+                            SHIKSHA PRASHAR AND MANAV UTTHAN SAMITI Society</p>
+                    </div>
+                </a>
+                <div class="header-right">
+                    <div class="affiliation">
+                        <span
+                            style="background:var(--primary-navy); color:#fff; padding:5px 15px; border-radius:20px; font-size:12px; font-weight:700;">Affiliated
+                            to CBSE</span>
+                    </div>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-bar" id="main-nav">
+            <div class="container">
+                <ul id="nav-list">
+                    <li class="dropdown">
+                        <a href="#">ABOUT US</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="school-history.html">SCHOOL HISTORY</a></li>
+                            <li><a href="principal-message.html">PRINCIPALS MESSAGE</a></li>
+                            <li><a href="#">OUR MISSION</a></li>
+                            <li><a href="#">INFRASTRUCTURE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ACADEMIC ZONE</a></li>
+                    <li><a href="#">STAFF ZONE</a></li>
+                    <li><a href="#">STUDENT ZONE</a></li>
+                    <li class="dropdown">
+                        <a href="#">GALLERY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PHOTO GALLERY</a></li>
+                            <li><a href="#">VIDEO GALLERY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ACHIEVEMENTS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
-            </li>
-            <li class="divider">|</li>
-            <li><a href="#">ACADEMIC ZONE</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">STAFF ZONE</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">STUDENT ZONE</a></li>
-            <li class="divider">|</li>
-            <li class="dropdown">
-                <a href="#">GALLERY</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">PHOTO GALLERY</a></li>
-                    <li><a href="#">VIDEO GALLERY</a></li>
-                    <li><a href="#">MEDIA GALLERY</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <section class="school-history-section">
+        <div class="history-container">
+            <h2 class="main-history-title">SCHOOL HISTORY</h2>
+            <div class="history-row">
+                <div class="history-box">
+                    <span class="box-label">EARLY DAYS</span>
+                    <div class="box-images">
+                        <div class="gallery-item">
+                            <a href="building1.jpg" class="lightbox-img">
+                                <img src="building1.jpg" alt="Building 1">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="building2.jpg" class="lightbox-img">
+                                <img src="building2.jpg" alt="Building 2">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="building3.jpg" class="lightbox-img">
+                                <img src="building3.jpg" alt="Building 3">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="early6.jpg" class="lightbox-img">
+                                <img src="early6.jpg" alt="Building 4">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="history-box">
+                    <span class="box-label">EARLY DAYS</span>
+                    <div class="box-images">
+                        <div class="gallery-item">
+                            <a href="early1.jpg" class="lightbox-img">
+                                <img src="early1.jpg" alt="Early Day 1">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="early2.jpg" class="lightbox-img">
+                                <img src="early2.jpg" alt="Early Day 2">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="early3.jpg" class="lightbox-img">
+                                <img src="early3.jpg" alt="Early Day 3">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="early4.jpg" class="lightbox-img">
+                                <img src="early4.jpg" alt="Early Day 3">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="early5.jpg" class="lightbox-img">
+                                <img src="early5.jpg" alt="Early Day 3">
+                                <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-box full-width">
+                <span class="box-label">GROWING UP</span>
+                <div class="box-images">
+                    <div class="gallery-item">
+                        <a href="grow1.png" class="lightbox-img">
+                            <img src="grow1.png" alt="Growing 1">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="grow2.png" class="lightbox-img">
+                            <img src="grow2.png" alt="Growing 2">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="grow3.png" class="lightbox-img">
+                            <img src="grow3.png" alt="Growing 3">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="grow4.png" class="lightbox-img">
+                            <img src="grow4.png" alt="Growing 4">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="grow5.png" class="lightbox-img">
+                            <img src="grow5.png" alt="Growing 5">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="grow6.png" class="lightbox-img">
+                            <img src="grow6.png" alt="Growing 6">
+                            <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>V.K MEMORIAL</h3>
+                <p>Providing quality education and fostering excellence in every student.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="school-history.html">School History</a></li>
+                    <li><a href="principal-message.html">Principal's Message</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
-            </li>
-            <li><a href="#">ACHIEVEMENTS</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
-    </div>
-</div>
-
-<section class="school-history-section">
-    <div class="history-container">
-        <h2 class="main-history-title">SCHOOL HISTORY</h2>
-<div class="history-row">
-    <div class="history-box">
-        <span class="box-label">EARLY DAYS</span>
-        <div class="box-images">
-            <div class="gallery-item">
-                <a href="building1.jpg" class="lightbox-img">
-                    <img src="building1.jpg" alt="Building 1">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
             </div>
-            <div class="gallery-item">
-                <a href="building2.jpg" class="lightbox-img">
-                    <img src="building2.jpg" alt="Building 2">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="building3.jpg" class="lightbox-img">
-                    <img src="building3.jpg" alt="Building 3">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="early6.jpg" class="lightbox-img">
-                    <img src="early6.jpg" alt="Building 4">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p>Harbansh Nagar, Ghaziabad<br>Uttar Pradesh, India</p>
+                <p>Email: vkmemorialpublicschool@gmail.com</p>
             </div>
         </div>
-    </div>
-
-    <div class="history-box">
-        <span class="box-label">EARLY DAYS</span>
-        <div class="box-images">
-            <div class="gallery-item">
-                <a href="early1.jpg" class="lightbox-img">
-                    <img src="early1.jpg" alt="Early Day 1">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="early2.jpg" class="lightbox-img">
-                    <img src="early2.jpg" alt="Early Day 2">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="early3.jpg" class="lightbox-img">
-                    <img src="early3.jpg" alt="Early Day 3">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="early4.jpg" class="lightbox-img">
-                    <img src="early4.jpg" alt="Early Day 3">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <a href="early5.jpg" class="lightbox-img">
-                    <img src="early5.jpg" alt="Early Day 3">
-                    <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                </a>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 V K Memorial Public School. All Rights Reserved.</p>
         </div>
-    </div>
-</div>
-
-        <div class="history-box full-width">
-            <span class="box-label">GROWING UP</span>
-            <div class="box-images">
-                <div class="gallery-item">
-                    <a href="grow1.png" class="lightbox-img">
-                        <img src="grow1.png" alt="Growing 1">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="grow2.png" class="lightbox-img">
-                        <img src="grow2.png" alt="Growing 2">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="grow3.png" class="lightbox-img">
-                        <img src="grow3.png" alt="Growing 3">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="grow4.png" class="lightbox-img">
-                        <img src="grow4.png" alt="Growing 4">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="grow5.png" class="lightbox-img">
-                        <img src="grow5.png" alt="Growing 5">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-                <div class="gallery-item">
-                    <a href="grow6.png" class="lightbox-img">
-                        <img src="grow6.png" alt="Growing 6">
-                        <div class="hover-overlay"><span class="overlay-text">VIEW PHOTO</span></div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <footer style="background: #00152e; color: white; text-align: center; padding: 20px;">
-        <p>&copy; 2026 V K Memorial Public School. All Rights Reserved.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js"></script>
-<script>
-    // This waits for the library above to be fully ready
-    window.addEventListener('load', function() {
-        if (typeof LuminousGallery !== 'undefined') {
-            new LuminousGallery(document.querySelectorAll(".lightbox-img"), {
-                arrowNavigation: true
-            }, {
-                injectBaseStyles: true, // Crucial for the DPSG-style popup layout
-                caption: function(trigger) {
-                    return trigger.querySelector('img').getAttribute('alt');
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("main-nav");
+            const overlay = document.getElementById("nav-overlay");
+            const toggleBtn = document.querySelector(".menu-toggle");
+
+            nav.classList.toggle("show");
+            overlay.classList.toggle("show");
+            toggleBtn.classList.toggle("active");
+
+            // Prevent scrolling when menu is open
+            if (nav.classList.contains("show")) {
+                document.body.style.overflow = "hidden";
+            } else {
+                document.body.style.overflow = "";
+            }
+        }
+
+        // Accordion Toggle for Mobile
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 991) {
+                    e.preventDefault();
+                    const parent = this.parentElement;
+                    parent.classList.toggle('active');
                 }
             });
-        } else {
-            console.error("LuminousGallery library failed to load. Check your internet connection.");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById("main-nav");
+            const overlay = document.getElementById("nav-overlay");
+            const toggleBtn = document.querySelector(".menu-toggle");
+            nav.classList.toggle("show");
+            if (overlay) overlay.classList.toggle("show");
+            toggleBtn.classList.toggle("active");
+            document.body.style.overflow = nav.classList.contains("show") ? "hidden" : "";
         }
-    });
-</script>
+
+        // Fix for Mobile Clicks on Dropdowns
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                if (window.innerWidth <= 991) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+
+        // History Page Gallery (with Captions)
+        window.addEventListener('load', function () {
+            try {
+                if (typeof LuminousGallery !== 'undefined') {
+                    new LuminousGallery(document.querySelectorAll(".lightbox-img"), {
+                        arrowNavigation: true
+                    }, {
+                        injectBaseStyles: true,
+                        caption: function (trigger) {
+                            return trigger.querySelector('img').getAttribute('alt');
+                        }
+                    });
+                }
+            } catch (e) {
+                console.warn("Luminous Gallery blocked.");
+            }
+        });
+    </script>
 </body>
+
 </html>

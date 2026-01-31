@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V K MEMORIAL PUBLIC SCHOOL </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous-basic.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js"></script>
 </head>
-<body>
-<nav class="branding-header">
-<div class="header-center">
-    <a href="index.html" style="text-decoration: none; display: flex; align-items: center; gap: 20px; color: inherit;">
-        <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo">
-        <div class="school-titles">
-            <h1>V.K MEMORIAL PUBLIC SCHOOL</h1>
-            <div class="subtitle-wrapper">
-                <span class="line"></span>
-                <h2 class="branch-name">HARBANSH NAGAR GHAZIABAD</h2>
-                <span class="line"></span>
+
+<!-- Floating CTAs -->
+<div class="floating-ctas">
+    <a href="#contact" class="cta-btn enquire">Enquire Now</a>
+    <a href="#contact" class="cta-btn apply">Apply Now</a>
+</div>
+
+<header class="main-header">
+    <div class="top-bar">
+        <div class="container header-content">
+            <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo">
+                <div class="school-titles">
+                    <h1 style="margin:0; font-size:22px;">V.K MEMORIAL PUBLIC SCHOOL</h1>
+                    <p class="initiative" style="margin:0; font-size:11px; color:#666;">An initiative of RASTRIYA
+                        SHIKSHA PRASHAR AND MANAV UTTHAN SAMITI Society</p>
+                </div>
+            </a>
+            <div class="header-right">
+                <div class="affiliation">
+                    <span
+                        style="background:var(--primary-navy); color:#fff; padding:5px 15px; border-radius:20px; font-size:12px; font-weight:700;">Affiliated
+                        to CBSE</span>
+                </div>
             </div>
-            <p class="initiative">An initiative of RASTRIYA SHIKSHA PRASHAR AND MANAV UTTHAN SAMITI Society</p>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </a>
-</div>
-</nav>
+    </div>
+    <nav class="nav-bar" id="main-nav">
+        <div class="container">
+            <ul id="nav-list">
+                <li class="dropdown">
+                    <a href="#">ABOUT US</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="school-history.html">SCHOOL HISTORY</a></li>
+                        <li><a href="principal-message.html">PRINCIPALS MESSAGE</a></li>
+                        <li><a href="#">OUR MISSION</a></li>
+                        <li><a href="#">INFRASTRUCTURE</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ACADEMIC ZONE</a></li>
+                <li><a href="#">STAFF ZONE</a></li>
+                <li><a href="#">STUDENT ZONE</a></li>
+                <li class="dropdown">
+                    <a href="#">GALLERY</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">PHOTO GALLERY</a></li>
+                        <li><a href="#">VIDEO GALLERY</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ACHIEVEMENTS</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-<div class="academic-nav">
-    <div class="nav-container">
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul id="nav-list">
-            <li class="dropdown">
-                <a href="#">ABOUT US</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="school-history.html">SCHOOL HISTORY</a></li>
-                    <li><a href="#">OUR MISSION</a></li>
-                    <li><a href="principal-message.html">PRINCIPALS MESSAGE</a></li>
-                    <li><a href="#">INFRASTRUCTURE</a></li>
-                </ul>
-            </li>
-            <li class="divider">|</li>
-            <li><a href="#">ACADEMIC ZONE</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">STAFF ZONE</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">STUDENT ZONE</a></li>
-            <li class="divider">|</li>
-            <li class="dropdown">
-                <a href="#">GALLERY</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">PHOTO GALLERY</a></li>
-                    <li><a href="#">VIDEO GALLERY</a></li>
-                    <li><a href="#">MEDIA GALLERY</a></li>
-                </ul>
-            </li>
-            <li><a href="#">ACHIEVEMENTS</a></li>
-            <li class="divider">|</li>
-            <li><a href="#">CONTACT US</a></li>
-        </ul>
+<div class="news-ticker">
+    <span class="label">NEWS:</span>
+    <div class="scrolling-text">
+        <p>Admissions for 2026-27 are now open! | Last date for Fee Submission is 31st March.</p>
     </div>
 </div>
 
-    <div class="news-ticker">
-        <span class="label">NEWS:</span>
-        <div class="scrolling-text">
-            <p>Admissions for 2026-27 are now open! | Last date for Fee Submission is 31st March.</p>
-        </div>
-    </div>
-
-    <section class="home-banner">
+<section class="home-banner">
     <div class="banner-wrapper">
         <img src="51.jpeg" alt="V.K. Memorial School Event" class="main-banner-img">
-        <div class="banner-overlay-text">
-            </div>
+        <div class="banner-overlay-content">
+            <h2>Excellence in Education</h2>
+            <p>Nurturing minds, building character, and inspiring success for over decades.</p>
+            <a href="#contact" class="btn"
+                style="background:var(--secondary-gold); color:var(--primary-navy); padding:10px 25px; text-decoration:none; font-weight:700; border-radius:5px;">Join
+                Us Today</a>
         </div>
-    </section>
-    <section class="principal-section">
+    </div>
+</section>
+<section class="principal-section">
     <div class="container">
         <div class="principal-card">
             <div class="principal-image">
@@ -94,30 +105,34 @@
             <div class="principal-text">
                 <h2>From the Principal's Desk</h2>
                 <hr class="accent-line">
-                <p>“Success comes to those who work hard and stays with those who don’t rest on the laurels of the past.”</p>
-                <p>Welcome to V K Memorial Public School. We are committed to fostering a culture of innovation, excellence, and character-building. Our focus remains on the holistic development of every child...</p>
+                <p>“Success comes to those who work hard and stays with those who don’t rest on the laurels of the
+                    past.”</p>
+                <p>Welcome to V K Memorial Public School. We are committed to fostering a culture of innovation,
+                    excellence, and character-building. Our focus remains on the holistic development of every
+                    child...</p>
                 <a href="principal-message.html" class="read-more">Read Full Message →</a>
             </div>
         </div>
     </div>
 </section>
 
-    <section class="info-section">
-        <div class="announcements">
-            <h3>Latest Announcements</h3>
-            <ul>
-                <li>• Final Exam schedules are now posted.</li>
-                <li>• Admissions open for the 2026-27 session.</li>
-                <li>• Annual Sports Meet scheduled for February.</li>
-            </ul>
-        </div>
-        <div class="welcome">
-            <h2>Welcome to Our Academy</h2>
-            <p>Following the tradition of academic excellence, our school provides a holistic environment where students thrive both intellectually and socially.</p>
-        </div>
-        
-    </section>
-    <section class="contact-container">
+<section class="info-section">
+    <div class="announcements">
+        <h3>Latest Announcements</h3>
+        <ul>
+            <li>• Final Exam schedules are now posted.</li>
+            <li>• Admissions open for the 2026-27 session.</li>
+            <li>• Annual Sports Meet scheduled for February.</li>
+        </ul>
+    </div>
+    <div class="welcome">
+        <h2>Welcome to Our Academy</h2>
+        <p>Following the tradition of academic excellence, our school provides a holistic environment where students
+            thrive both intellectually and socially.</p>
+    </div>
+
+</section>
+<section class="contact-container">
     <h2>Contact Admissions</h2>
     <form action="https://formsubmit.co/vkmemorialpublicschool@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Parent/Student Name" required>
@@ -129,16 +144,37 @@
             <option value="high">High School</option>
         </select>
         <textarea name="message" placeholder="Your Inquiry..." rows="5"></textarea>
-        
+
         <input type="text" name="_honey" style="display:none">
-        
+
         <button type="submit" class="btn">Send Message</button>
         <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
     </form>
 </section>
-<footer style="background: #00152e; color: white; text-align: center; padding: 20px;">
-    <p>&copy; 2026 V K Memorial Public School. All Rights Reserved.</p>
-    <p>Harbansh Nagar, Ghaziabad, UttarPradesh, India</p>
+<footer class="main-footer">
+    <div class="container footer-content">
+        <div class="footer-col">
+            <h3>V.K MEMORIAL</h3>
+            <p>Providing quality education and fostering excellence in every student.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="school-history.html">School History</a></li>
+                <li><a href="principal-message.html">Principal's Message</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <p>Harbansh Nagar, Ghaziabad<br>Uttar Pradesh, India</p>
+            <p>Email: vkmemorialpublicschool@gmail.com</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 V K Memorial Public School. All Rights Reserved.</p>
+    </div>
 </footer>
 <div id="admissionsModal" class="modal-overlay">
     <div class="modal-content">
@@ -148,30 +184,63 @@
     </div>
 </div>
 <script>
-    // Function to close the popup
+    // 1. MOBILE MENU TOGGLE (The "Hamburger" Button)
+    function toggleMenu() {
+        const nav = document.getElementById("main-nav");
+        const overlay = document.getElementById("nav-overlay");
+        const toggleBtn = document.querySelector(".menu-toggle");
+
+        nav.classList.toggle("show");
+        if (overlay) overlay.classList.toggle("show");
+        toggleBtn.classList.toggle("active");
+
+        document.body.style.overflow = nav.classList.contains("show") ? "hidden" : "";
+    }
+
+    // 2. FIX FOR "ABOUT US" AND "GALLERY" CLICKS
+    // This part makes the menu items clickable on mobile
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            if (window.innerWidth <= 991) {
+                e.preventDefault(); // This stops the page from jumping
+                const parent = this.parentElement;
+
+                // Toggle the 'active' class to show/hide sub-menu
+                parent.classList.toggle('active');
+
+                // Close other open menus (optional, for a cleaner look)
+                document.querySelectorAll('.dropdown').forEach(other => {
+                    if (other !== parent) other.classList.remove('active');
+                });
+            }
+        });
+    });
+
+    // 3. SAFE PHOTO GALLERY (Luminous)
+    // Try/Catch prevents the "Tracking Prevention" error from breaking the menu
+    window.addEventListener('load', function () {
+        try {
+            if (typeof LuminousGallery !== 'undefined') {
+                new LuminousGallery(document.querySelectorAll(".lightbox-img"), {
+                    arrowNavigation: true
+                });
+            }
+        } catch (err) {
+            console.log("Gallery blocked by browser, but navigation is safe.");
+        }
+    });
+
+    // 4. ADMISSIONS POPUP LOGIC
     function closeModal() {
         document.getElementById("admissionsModal").style.display = "none";
     }
-
-    // Optional: Auto-close if user clicks outside the image
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         let modal = document.getElementById("admissionsModal");
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+        if (event.target == modal) modal.style.display = "none";
     }
 </script>
-<script>
-    // This activates the popup for all images with the lightbox-img class
-    new LuminousGallery(document.querySelectorAll(".lightbox-img"), {
-        arrowNavigation: true // Allows parents to swipe through images
-    });
-</script>
-<script>
-    function toggleMenu() {
-        var nav = document.getElementById("nav-list");
-        nav.classList.toggle("show");
-    }
-</script>
+<!-- Nav Overlay -->
+<div class="nav-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
 </body>
+
 </html>
