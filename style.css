@@ -681,6 +681,17 @@ h6 {
     color: rgba(255, 255, 255, 0.7);
 }
 
+/* Footer Contact Links */
+.footer-col p a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col p a:hover {
+    color: var(--secondary-gold);
+}
+
 .footer-links {
     list-style: none;
     padding: 0;
