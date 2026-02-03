@@ -265,11 +265,17 @@ h6 {
     }
 
     .logo-area {
-        max-width: 70%;
+        max-width: 85%;
+        gap: 10px;
     }
 
     .school-titles h1 {
-        font-size: 16px !important;
+        font-size: 14px !important;
+        white-space: nowrap;
+    }
+
+    .main-logo {
+        height: 50px;
     }
 
     .header-right {
@@ -982,7 +988,7 @@ h6 {
     }
 
     .school-titles h1 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .branch-name {
@@ -1042,7 +1048,7 @@ h6 {
     }
 
     .main-logo {
-        height: 60px;
+        height: 50px;
     }
 }
 
@@ -1305,6 +1311,7 @@ h6 {
 }
 
 /* Responsive Design for Contact Page */
+
 @media (max-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr;
@@ -1322,6 +1329,7 @@ h6 {
     .contact-item {
         flex-direction: column;
         text-align: center;
+        align-items: center;
     }
 
     .contact-icon {
