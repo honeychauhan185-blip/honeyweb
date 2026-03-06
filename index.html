@@ -39,6 +39,7 @@
     <link rel="apple-touch-icon" href="logo12.png">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
@@ -77,7 +78,7 @@
 <!-- Floating CTAs -->
 <div class="floating-ctas">
     <a href="#contact" class="cta-btn enquire">Enquire Now</a>
-    <a href="#contact" class="cta-btn apply">Apply Now</a>
+    <a href="javascript:void(0)" onclick="showModal()" class="cta-btn apply">Apply Now</a>
 </div>
 
 <header class="main-header">
@@ -96,6 +97,15 @@
                     <span
                         style="background:var(--primary-navy); color:#fff; padding:5px 15px; border-radius:20px; font-size:12px; font-weight:700;">Affiliated
                         to CBSE</span>
+                </div>
+                <div class="header-social-links">
+                    <a href="https://wa.me/919868385488" target="_blank" class="whatsapp-top" title="WhatsApp Connect">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@vkmemorialpublicschool" target="_blank" class="youtube-top"
+                        title="YouTube Channel">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()">
@@ -193,16 +203,25 @@
     </div>
 
 </section>
-<section class="contact-container">
+</section>
+<section id="contact" class="contact-container">
     <h2>Contact Admissions</h2>
     <form action="https://formsubmit.co/vkmemorialpublicschool@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Parent/Student Name" required>
         <input type="email" name="email" placeholder="Your Email Address" required>
         <select name="grade">
             <option value="">Select Grade for Admission</option>
-            <option value="primary">Primary School</option>
-            <option value="middle">Middle School</option>
-            <option value="high">High School</option>
+            <option value="Nursery">Nursery</option>
+            <option value="LKG">L.K.G</option>
+            <option value="UKG">U.K.G</option>
+            <option value="Class 1">Class 1</option>
+            <option value="Class 2">Class 2</option>
+            <option value="Class 3">Class 3</option>
+            <option value="Class 4">Class 4</option>
+            <option value="Class 5">Class 5</option>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
         </select>
         <textarea name="message" placeholder="Your Inquiry..." rows="5"></textarea>
 
@@ -293,6 +312,9 @@
     });
 
     // 4. ADMISSIONS POPUP LOGIC
+    function showModal() {
+        document.getElementById("admissionsModal").style.display = "flex";
+    }
     function closeModal() {
         document.getElementById("admissionsModal").style.display = "none";
     }
@@ -300,6 +322,8 @@
         let modal = document.getElementById("admissionsModal");
         if (event.target == modal) modal.style.display = "none";
     }
+
+
 </script>
 <!-- Nav Overlay -->
 <div class="nav-overlay" id="nav-overlay" onclick="toggleMenu()"></div>
