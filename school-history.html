@@ -285,57 +285,38 @@
         </div>
     </footer>
     <script>
+        // 1. MOBILE MENU TOGGLE (The "Hamburger" Button)
         function toggleMenu() {
             const nav = document.getElementById("main-nav");
             const overlay = document.getElementById("nav-overlay");
             const toggleBtn = document.querySelector(".menu-toggle");
 
-            nav.classList.toggle("show");
-            overlay.classList.toggle("show");
-            toggleBtn.classList.toggle("active");
-
-            // Prevent scrolling when menu is open
-            if (nav.classList.contains("show")) {
-                document.body.style.overflow = "hidden";
-            } else {
-                document.body.style.overflow = "";
-            }
-        }
-
-        // Accordion Toggle for Mobile
-        document.querySelectorAll('.dropdown > a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                if (window.innerWidth <= 991) {
-                    e.preventDefault();
-                    const parent = this.parentElement;
-                    parent.classList.toggle('active');
-                }
-            });
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.4.0/luminous.min.js"></script>
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById("main-nav");
-            const overlay = document.getElementById("nav-overlay");
-            const toggleBtn = document.querySelector(".menu-toggle");
             nav.classList.toggle("show");
             if (overlay) overlay.classList.toggle("show");
             toggleBtn.classList.toggle("active");
+
             document.body.style.overflow = nav.classList.contains("show") ? "hidden" : "";
         }
 
-        // Fix for Mobile Clicks on Dropdowns
+        // 2. FIX FOR "ABOUT US" AND "GALLERY" CLICKS ON MOBILE
         document.querySelectorAll('.dropdown > a').forEach(link => {
             link.addEventListener('click', function (e) {
                 if (window.innerWidth <= 991) {
-                    e.preventDefault();
-                    this.parentElement.classList.toggle('active');
+                    e.preventDefault(); // This stops the page from jumping
+                    const parent = this.parentElement;
+
+                    // Toggle the 'active' class to show/hide sub-menu
+                    parent.classList.toggle('active');
+
+                    // Close other open menus (optional, for a cleaner look)
+                    document.querySelectorAll('.dropdown').forEach(other => {
+                        if (other !== parent) other.classList.remove('active');
+                    });
                 }
             });
         });
 
-        // History Page Gallery (with Captions)
+        // 3. History Page Gallery (with Captions)
         window.addEventListener('load', function () {
             try {
                 if (typeof LuminousGallery !== 'undefined') {
