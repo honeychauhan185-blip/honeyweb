@@ -82,8 +82,8 @@
     <header class="main-header">
         <div class="top-bar">
             <div class="container header-content">
-                <a href="/" class="logo-area" style="text-decoration: none; color: inherit;">
-                    <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo">
+                <a href="index.html" class="logo-area" style="text-decoration: none; color: inherit;">
+                    <img src="logo12.png" alt="V.K Memorial Logo" class="main-logo" decoding="async">
                     <div class="school-titles">
                         <h1 style="margin:0; font-size:22px;">V.K MEMORIAL PUBLIC SCHOOL</h1>
                         <p class="initiative" style="margin:0; font-size:11px; color:#666;">An initiative of RASTRIYA
@@ -91,6 +91,11 @@
                     </div>
                 </a>
                 <div class="header-right">
+                    <div class="affiliation">
+                        <span
+                            style="background:var(--primary-navy); color:#fff; padding:5px 15px; border-radius:20px; font-size:12px; font-weight:700;">Affiliated
+                            to CBSE</span>
+                    </div>
                     <div class="header-social-links">
                         <a href="https://wa.me/919868385488" target="_blank" class="whatsapp-top"
                             title="WhatsApp Connect">
@@ -99,57 +104,43 @@
                         <a href="https://www.youtube.com/@vkmemorialpublicschool" target="_blank" class="youtube-top"
                             title="YouTube Channel">
                             <i class="fab fa-youtube"></i>
-                            <div class="header-right">
-                                <div class="affiliation">
-                                    <span
-                                        style="background:var(--primary-navy); color:#fff; padding:5px 15px; border-radius:20px; font-size:12px; font-weight:700;">Affiliated
-                                        to CBSE</span>
-                                </div>
-                                <div class="header-social-links">
-                                    <a href="https://wa.me/919868385488" target="_blank" class="whatsapp-top"
-                                        title="WhatsApp Connect">
-                                        <i class="fab fa-whatsapp"></i>
-                                    </a>
-                                    <a href="https://www.youtube.com/@vkmemorialpublicschool" target="_blank"
-                                        class="youtube-top" title="YouTube Channel">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <button class="menu-toggle" onclick="toggleMenu()">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
+                        </a>
                     </div>
                 </div>
-                <nav class="nav-bar" id="main-nav">
-                    <div class="container">
-                        <ul id="nav-list">
-                            <li class="dropdown">
-                                <a href="#">ABOUT US</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="school-history">SCHOOL HISTORY</a></li>
-                                    <li><a href="principal-message">PRINCIPALS MESSAGE</a></li>
-                                    <li><a href="#">OUR MISSION</a></li>
-                                    <li><a href="#">INFRASTRUCTURE</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">ACADEMIC ZONE</a></li>
-                            <li><a href="#">STAFF ZONE</a></li>
-                            <li><a href="#">STUDENT ZONE</a></li>
-                            <li class="dropdown">
-                                <a href="#">GALLERY</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">PHOTO GALLERY</a></li>
-                                    <li><a href="#">VIDEO GALLERY</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">ACHIEVEMENTS</a></li>
-                            <li><a href="contact-us">CONTACT US</a></li>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <nav class="nav-bar" id="main-nav">
+            <div class="container">
+                <ul id="nav-list">
+                    <li class="dropdown">
+                        <a href="#">ABOUT US</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="school-history">SCHOOL HISTORY</a></li>
+                            <li><a href="principal-message">PRINCIPALS MESSAGE</a></li>
+                            <li><a href="#">OUR MISSION</a></li>
+                            <li><a href="#">INFRASTRUCTURE</a></li>
                         </ul>
-                    </div>
-                </nav>
+                    </li>
+                    <li><a href="#">ACADEMIC ZONE</a></li>
+                    <li><a href="#">STAFF ZONE</a></li>
+                    <li><a href="#">STUDENT ZONE</a></li>
+                    <li class="dropdown">
+                        <a href="#">GALLERY</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PHOTO GALLERY</a></li>
+                            <li><a href="#">VIDEO GALLERY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ACHIEVEMENTS</a></li>
+                    <li><a href="contact-us">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <section class="school-history-section">
